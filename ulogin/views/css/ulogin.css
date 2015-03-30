@@ -1,0 +1,98 @@
+div#myfirstmodule_block_home p {
+    font-size: 150%;
+    font-style: italic;
+}
+#myfirstmodule_block_home {
+    width: 100%;
+    float: left;
+}
+
+.ulogin_block, #ulogin_accounts {
+    padding: 8px 10px 7px 10px;
+}
+
+.place0 {
+    float: right;
+}
+
+.place1 {
+   float: none;
+}
+
+.place1 .ulogin_label {
+    color: #000;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.place2 {
+    /*float: left;*/
+    padding: 10px 10px 32px 10px;
+}
+
+.place2 .ulogin_label {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #555454;
+    font-size: 18px;
+    line-height: normal;
+    margin-top: -4px;
+    text-shadow: none;
+}
+
+.ulogin_label, .ulogin_panel {
+    color: #fff;
+    float: left;
+    display: block;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    line-height: 18px;
+}
+
+.ulogin_network {
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.ulopt_input {
+    width: 380px;
+}
+
+.nobootstrap label {
+    padding: 0.2em 0.5em 2em 0;
+    width: 180px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.form-table td {
+    padding: 15px 10px;
+    line-height: 1.3;
+    vertical-align: middle;
+}
+
+.form-table {
+    width: 100%;
+}
+
+.nobootstrap {
+    max-width: 100%;
+    min-width: 320px!important;
+}
+.description {
+    font-style: italic;
+    font-size: 14px;
+}
+.header_nav_ulogin {
+    float: right;
+    padding: 8px 9px 0px 8px;
+}
+
+.alert.alert-danger.ulogin {
+    pointer-events: none;
+}
+
+.alert.alert-danger.ulogin:before {
+    pointer-events: all;
+}
