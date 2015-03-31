@@ -1,22 +1,34 @@
 {*
-* uLogin module
+* 2015 uLogin
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade uLogin to newer
+* versions in the future. If you wish to customize uLogin for your
+* needs please refer to http://ulogin.ru for more information.
+*
+*  @author uLogin RU <http://ulogin.ru>
+*  @copyright uLogin RU
+*  @license GNU General Public License, version 2
+*
 *}
-{capture name=path}{l s='Your uLogin'}{/capture}
+{capture name=path}{l s='Аккаунты Социальных Сетей' mod='ulogin'}{/capture}
 {capture name=path}
-    <a href="{$link->getPageLink('my-account', true)|escape:'htmlall':'UTF-8'}">{l s='Моя учётная запись' mod='ulogin'}</a>
-    <span class="navigation-pipe">{$navigationPipe}</span>{l s='Мой uLogin' mod='ulogin'}
+    <a href="{$link->getPageLink('my-account', true)|escape:'UTF-8'}">{l s='Моя учётная запись' mod='ulogin'}</a>
+    <span class="navigation-pipe">{$navigationPipe|escape:'UTF-8'}</span>{l s='Аккаунты Социальных Сетей' mod='ulogin'}
 {/capture}
 <div><h2>Профиль uLogin</h2>
+
     <div>
         <h3>Синхронизация аккаунтов</h3>
-        {$panel}
+        {$panel|escape:'UTF-8'}
         Привяжите ваши аккаунты соц. сетей к личному кабинету для быстрой авторизации через любой из них
     </div>
 
     <div>
         <h3>Привязанные аккаунты</h3>
 
-        <div id="ulogin_synchronisation">{$syncpanel}</div>
+        <div id="ulogin_synchronisation">{$syncpanel|escape:'UTF-8'}</div>
         Вы можете удалить привязку к аккаунту, кликнув по значку
     </div>
 </div>
