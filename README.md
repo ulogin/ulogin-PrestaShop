@@ -61,7 +61,7 @@ License: GNU General Public License, version 2
 	
 Для использования панели авторизации в хуках или контроллерах PrestaShop используйте код функции
 
-	`ulogin::draw_panel($place, $with_label)`
+	`Ulogin::drawPanel($place, $with_label)`
 	
 	`/**
 	* bool $with_label - указывает, стоит ли отображать строку типа "Войти с помощью:" рядом с виджетом (true - строка отображается). Значение по умолчанию = true
@@ -74,7 +74,7 @@ License: GNU General Public License, version 2
 	
 Для использования списка аккаунтов пользователя в хуках или контроллерах PrestaShop используйте код функции
 
-	ulogin::get_ulogin_user_accounts_panel($user_id = 0)
+	Ulogin::getUloginUserAccountsPanel($user_id = 0)
 	`/**
 	* int $user_id - ID пользователя. Значение по умолчанию = текущий пользователь.
 	*/
