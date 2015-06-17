@@ -149,7 +149,7 @@ class Ulogin extends Module
 	public function hookDisplayHeader()
 	{
 		$this->context->controller->addCSS($this->_path.'views/css/ulogin.css', 'all');
-		$this->context->controller->addJS('//ulogin.ru/js/ulogin.js');
+		$this->context->controller->addJS('https://ulogin.ru/js/ulogin.js');
 		if (!Context::getContext()->customer->isLogged()) $this->context->controller->addJS($this->_path.
 			'views/js/ulogin.js');
 
@@ -423,6 +423,7 @@ class Ulogin extends Module
 		$response = false;
 		if ($token)
 		{
+
 			$data = array('cms' => 'prestashop', 'version' => _PS_VERSION_,);
 
 			$request = 'http://ulogin.ru/token.php?token='.$token.'&host='.$_SERVER['HTTP_HOST'].'&data='.
