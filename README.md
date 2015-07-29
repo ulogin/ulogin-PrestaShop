@@ -3,8 +3,8 @@
 Donate link: http://ulogin.ru  
 Tags: ulogin, login, social, authorization  
 Requires at least: 1.5  
-Tested up to: 1.6.0.14  
-Stable tag: 1.0.  
+Tested up to: 1.6.1.0
+Stable tag: 1.0.1
 License: GNU General Public License, version 2  
 
 **uLogin** — это инструмент, который позволяет пользователям получить единый доступ к различным Интернет-сервисам без необходимости повторной регистрации,
@@ -60,7 +60,7 @@ License: GNU General Public License, version 2
 	
 Для использования панели авторизации в хуках или контроллерах PrestaShop используйте код функции
 
-		Ulogin::drawPanel($place, $with_label)
+		(new Ulogin)->drawPanel($place, $with_label)
 	
 		/**
 		* bool $with_label - указывает, стоит ли отображать строку типа "Войти с помощью:" 
@@ -75,12 +75,16 @@ License: GNU General Public License, version 2
 	
 Для использования списка аккаунтов пользователя в хуках или контроллерах PrestaShop используйте код функции
 
-		Ulogin::getUloginUserAccountsPanel($user_id = 0)
+		(new Ulogin)->getUloginUserAccountsPanel($user_id = 0)
 		/**
 		* int $user_id - ID пользователя. Значение по умолчанию = текущий пользователь.
 		*/
 
 ## Изменения
- 
-####1.0.0.
+
+####1.0.1
+* Рефакторинг кода.
+* Исправлен баг с выводом панели uLogin.
+
+####1.0.0
 * Релиз.
