@@ -4,7 +4,7 @@
  * @author    uLogin RU <https://ulogin.ru/>
  * @copyright 2015 uLogin RU
  * @license   GNU General Public License, version 2
- * @version 1.0.0.
+ * @version 1.0.2.
  */
 if(!defined('_PS_VERSION_'))
 	exit;
@@ -23,7 +23,7 @@ class Ulogin extends Module {
 	public function __construct() {
 		$this->name = 'ulogin';
 		$this->tab = 'front_office_features';
-		$this->version = '1.0.01';
+		$this->version = '1.0.2';
 		$this->author = 'uLogin';
 		$this->need_instance = 1;
 		$this->ps_versions_compliancy = array('min' => '1.5', 'max' => _PS_VERSION_);
