@@ -255,7 +255,8 @@ class Ulogin extends Module {
 
 	public function hookDisplayNav() {
 		if(!Context::getContext()->customer->isLogged())
-			$this->drawPanel(0);
+			return $this->drawPanel(0);
+		return false;
 	}
 
 	public function hookDisplayFooter() {

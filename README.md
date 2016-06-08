@@ -3,7 +3,7 @@
 Donate link: http://ulogin.ru  
 Tags: ulogin, login, social, authorization  
 Requires at least: 1.5  
-Tested up to: 1.6.1.0  
+Tested up to: 1.6.1.5  
 Stable tag: 1.0.2  
 License: GNU General Public License, version 2  
 
@@ -81,6 +81,9 @@ License: GNU General Public License, version 2
 		*/
 
 ## Изменения
+
+####1.0.2
+* Исправлена проблема с отсутствием виджета
 
 ####1.0.1
 * Рефакторинг кода.
