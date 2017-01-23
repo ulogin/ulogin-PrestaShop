@@ -241,6 +241,7 @@ class Ulogin extends Module {
 	public function hookDisplayHeader() {
 		$this->context->controller->addCSS($this->_path . 'views/css/ulogin.css', 'all');
 		$this->context->controller->addJS('https://ulogin.ru/js/ulogin.js');
+
 		if(!Context::getContext()->customer->isLogged()) {
 			$this->context->controller->addJS($this->_path . 'views/js/ulogin.js');
 			$this->drawPanel();
@@ -432,8 +433,7 @@ class Ulogin extends Module {
 				$other_u = Db::getInstance()->getValue('SELECT identity FROM ' . _DB_PREFIX_ . 'customer_ulogin_table WHERE userid = "' . $user_id . '"');
 				if($other_u) {
 					if(!$is_logged_in && !isset($u_user['merge_account'])) {
-						$this->errors = $this->l('С данным аккаунтом уже связаны данные из другой социальной сети.') . '<br>' . $this->l('Требуется привязка новой учётной записи социальной сети к этому
-							аккаунту.');
+						$this->errors = $this->l('С данным аккаунтом уже связаны данные из другой социальной сети.') . '<br>' . $this->l('Требуется привязка новой учётной записи социальной сети к этому аккаунту.');
 						$this->context->smarty->assign(array('message' => ('<script src="//ulogin.ru/js/ulogin.js"
 						type="text/javascript"></script><script type="text/javascript">uLogin.mergeAccounts("' . Tools::getValue('token') . '","' . $other_u . '")</script>'), 'ulogin_message' => $this->errors));
 
